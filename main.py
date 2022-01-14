@@ -1,3 +1,9 @@
+from flask import Flask
+
+app = Flask (__name__)
+
+@app.route('/')
+
 # This is a sample Python script.
 
 # Press Shift+F10 to execute it or replace it with your code.
