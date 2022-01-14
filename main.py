@@ -1,5 +1,5 @@
 # start of imports
-from flask import Flask
+from flask import Flask, render_template
 # end of imports
 
 # generating website
@@ -9,9 +9,9 @@ app = Flask (__name__)
 @app.route ('/')
 def home():
     # Use a breakpoint in the code line below to debug your script.
-    return 'Hi, Paty'  # Press Ctrl+F8 to toggle the breakpoint.
+    return render_template('home.html')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
 # running website
 if __name__ == '__main__':
-    app.run ()
+    app.run (debug = True)
