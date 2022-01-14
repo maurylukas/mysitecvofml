@@ -7,7 +7,7 @@ app = Flask (__name__)
 
 # homepage path
 @app.route ('/')
-def home():
+def home ():
     # Use a breakpoint in the code line below to debug your script.
     return render_template('home.html')  # Press Ctrl+F8 to toggle the breakpoint.
 
