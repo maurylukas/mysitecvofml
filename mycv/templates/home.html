@@ -1,7 +1,22 @@
 {% extends 'base.html' %}
 
 {% block body %}
-    <h1>Hello, I'm Lukas Freitas</h1>
-    <h2>A little bit about me:</h2>
-    <h3></h3>
+    <div class="mx-auto" style="width: 500px;">
+        <div class="d-grid gap-3">
+            <h1>Hello, I'm Lukas Freitas</h1>
+            <h2>A little bit about me:</h2>
+            <h3>This is who I am</h3>
+        </div>
+        <div class="mt-3">
+            <a class="text-decoration-none" href="{{ url_for ('resume') }}">
+                <button type="button" class="btn btn-danger rounded-pill border">Resume</button>
+            </a>
+            <a class="text-decoration-none" href="{{ url_for ('projects') }}">
+                <button type="button" class="btn btn-success rounded-pill border">Projects</button>
+            </a>
+            <a class="text-decoration-none" href="{{ url_for ('contact') }}">
+                <button type="button" class="btn btn-primary rounded-pill border">Contact</button>
+            </a>
+        </div>
+    </div>
 {% endblock %}
