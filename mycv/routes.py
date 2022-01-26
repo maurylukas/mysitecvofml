@@ -6,7 +6,7 @@ from flask import render_template, url_for
 # homepage path
 @app.route ('/')
 def home ():
-    return render_template ('home.html')
+    return render_template ('novo.html')
 
 # resume path
 @app.route ('/resume')
