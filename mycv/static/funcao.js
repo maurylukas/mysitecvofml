@@ -13,4 +13,7 @@ $(document).ready(function() {
             $('.wrapper').addClass('active');
         }
   });
+  if ($(window).width() <= 768) {
+    $('.collapse').collapse();
+    }
 });

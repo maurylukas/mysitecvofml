@@ -15,6 +15,11 @@
     perspective: 1500px;
 }
 
+.with-chevron[aria-expanded='true'] i {
+  display: block;
+  transform: rotate(180deg) !important;
+}
+
 .vertical-nav {
   min-width: 17rem;
   width: 17rem;
@@ -88,8 +93,8 @@
 
 body {
   background: #599fd9;
-  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
-  background: linear-gradient(to right, #599fd9, #c2e59c);
+  background: -webkit-linear-gradient(to right, #477fad, #9bb77c); /* #599fd9, #c2e59c */
+  background: linear-gradient(to right, #477fad, #9bb77c); /* #599fd9, #c2e59c */
   min-height: 100vh;
   overflow-x: hidden;
 }
