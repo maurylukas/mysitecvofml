@@ -1,33 +1,72 @@
-<div class="container row mx-auto bg-gradient p-3" id="projects">
-    <h1>Projects</h1>
-    <div class="row mx-auto align-items-center">
-        <div class="col d-grid gap-3">
-            <h2>Spacial</h2>
-            <h3>My first project. I made it back in 2015, when I was on my first year on college, using HTML and JavaScript. It's a starship game where you have to shoot asteroids and also try to avoid being hit by them as the difficulty (and their numbers) increases.</h3>
-            <a href="#" target="_blank">Link to the Game</a>
+<div class="separator"></div>
+<h4 class="text-white" id="projects">Projects</h4>
+<div class="row text-white">
+    <div class="col-lg-7">
+      <div class="mb-5">
+        <!-- Collapse Panel 1-->
+        <a data-toggle="collapse" href="#spacial" role="button" aria-expanded="true" aria-controls="spacial" class="btn btn-dark btn-block py-2 shadow-sm with-chevron">
+          <p class="d-flex align-items-center justify-content-between mb-0 px-3 py-2">
+            <strong class="">Spacial</strong>
+            <i class="fa fa-angle-down"></i>
+          </p>
+        </a>
+        <div id="spacial" class="collapse shadow-sm show">
+          <div class="shadow-lg">
+            <div class="card-body">
+              <p class="font-italic mb-0 text-white">My first project. I made it back in 2015, when I was on my first year on college, using HTML, CSS and JavaScript.
+                It's a starship game where you have to shoot asteroids and also try to avoid being hit by them as the difficulty (and their numbers) increases.</p>
+              <br>
+              <img class="img-fluid mx-auto d-block float-end" src="static/spacial.jpg" alt="Game screenshot" width="755" height="443.5">
+              <a class="text-dark" href="#" target="_blank">Link to the Game (best viewed on desktops)</a>
+              <br>
+              <a class="text-dark" href="/static/GDD.pdf" target="_blank">Link to the Game Design Document (pdf file in Portuguese)</a>
+            </div>
+          </div>
         </div>
-        <div class="col d-grid gap-3">
-            <img class="img-fluid mx-auto d-block float-end" src="static/spacial.jpg" alt="Game screenshot" width="755" height="443.5">
-        </div>
+      </div>
     </div>
-    <div class="row mx-auto"><br></div>
-    <div class="row mx-auto align-items-center">
-        <div class="col d-grid gap-3">
-            <h2>Colony</h2>
-            <h3>A project about a smartphone game app using C# on Unity engine to help college students to learn and pin knowledge about Microbiology.</h3>
-            <a href="/static/GDDL.pdf" target="_blank">Link to the Game Design Document (pdf file in Portuguese)</a>
+    <div class="col-lg-5">
+      <div class="mb-5">
+        <!-- Collapse Panel 2-->
+        <button data-toggle="collapse" data-target="#colony" role="button" aria-expanded="true" aria-controls="colony" class="btn btn-dark btn-block py-2 shadow-sm with-chevron">
+          <p class="d-flex align-items-center justify-content-between mb-0 px-3 py-2">
+            <strong class="">Colony</strong>
+            <i class="fa fa-angle-down"></i>
+          </p>
+        </button>
+        <div id="colony" class="collapse shadow-sm show">
+          <div class="shadow-lg">
+            <div class="card-body">
+              <p class="font-italic mb-0 text-white">A project about a smartphone game app using C# on Unity engine to help college students to learn and pin knowledge about Microbiology.</p>
+              <br>
+              <img class="img-fluid mx-auto d-block float-end" src="static/telas.jpg" alt="App screens" width="300" height="445">
+              <a class="text-dark" href="/static/GDDL.pdf" target="_blank">Link to the Game Design Document (pdf file in Portuguese)</a>
+            </div>
+          </div>
         </div>
-        <div class="col d-grid gap-3">
-            <img class="img-fluid mx-auto d-block float-end" src="static/telas.jpg" alt="App screens" width="450" height="628">
-        </div>
+      </div>
     </div>
-    <div class="row mx-auto"><br></div>
-    <div class="row mx-auto align-items-center">
-        <div class="col d-grid gap-3">
-            <h2>Game Design Documents</h2>
+    <div class="col-lg-6">
+      <div class="mb-5">
+        <!-- Collapse Panel 3-->
+        <a data-toggle="collapse" href="#myapp" role="button" aria-expanded="true" aria-controls="myapp" class="btn btn-dark btn-block p2-3 shadow-sm with-chevron">
+          <p class="d-flex align-items-center justify-content-between mb-0 px-3 py-2">
+            <strong class="">My CV</strong>
+            <i class="fa fa-angle-down"></i>
+          </p>
+        </a>
+        <div id="myapp" class="collapse shadow-sm show">
+          <div class="shadow-lg">
+            <div class="card-body">
+              <p class="font-italic mb-0 text-white">An app with my CV.</p>
+              <p class="font-italic mb-0 text-white">Human Languages: Portuguese (Native), English (Fluent), Italian (Basic), German (Basic).</p>
+              <p class="font-italic mb-0 text-white">Loves: Cats, Plants, Cryptocurrencies, Games, Movies, Series, K-pop songs.</p>
+            </div>
+          </div>
         </div>
-        <div class="col d-grid gap-3">
-            <h2>GDDs for the projects above.</h2>
-        </div>
+      </div>
+      <p class="lead"></p>
+      <p class="lead"></p>
+      <p class="lead"></p>
     </div>
 </div>
