@@ -1,35 +1,50 @@
+<!-- Linking to base file -->
 {% extends 'base.html' %}
 
 {% block body %}
-    <div class="container row mx-auto bg-gradient p-3" id="home">
-        <div class="col">
-            <img class="img-fluid rounded-circle mx-auto d-block float-end" src="static/eu.jpg" alt="Me" width="240" height="320">
-            <img class="img-fluid rounded-circle mx-auto d-block float-end" src="static/nos.jpg" alt="Us" width="960" height="540">
-        </div>
-        <div class="col" >
-            <div class="d-grid gap-3">
-                <h1>Hello, I'm Lukas Freitas</h1>
-                <h2>A little bit about me:</h2>
-                <h3>Lorem ipsum dolor sit amet. Ut optio quos qui nihil nulla vel dolores nesciunt non tempore porro qui dolorum. Aut necessitatibus quisquam ut ipsum reiciendis ea sunt voluptas ut voluptate provident.
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
 
-    Aut omnis earum a dolorem vitae ut eaque ipsum. Cum eveniet illum sed minus ipsa aut nisi dolor non vitae saepe. Sed nihil consectetur aut beatae nemo non ipsa dolores eos molestias dicta aut corporis impedit. Ut distinctio iusto hic ipsam sunt qui corrupti officiis aut omnis atque.
+  <!-- Beginning of toggle button -->
+  <button id="sidebarCollapse" type="button" class="btn btn-info btn-light bg-white rounded-pill shadow-sm px-4 mb-4">
+    <i class="fa fa-bars mr-2"></i>
+    <small class="text-uppercase font-weight-bold">Toggle</small>
+  </button>
+  <!-- Ending of toggle button -->
 
-    Non magni 33 dicta dolorum ut voluptas quidem sit saepe voluptatem et illum omnis? Et iusto corrupti et minima sapiente et mollitia natus aut quisquam iure? Eum pariatur quisquam et itaque quia in dolores necessitatibus et molestias dolorem et fugit molestias 33 rerum amet.</h3>
-            </div>
-            <div class="m-3">
-                <a class="text-decoration-none p-2" href="#resume">
-                    <button type="button" class="btn btn-danger rounded-pill border btn-lg">Resume</button>
-                </a>
-                <a class="text-decoration-none p-2" href="#projects">
-                    <button type="button" class="btn btn-success rounded-0 border btn-lg">Projects</button>
-                </a>
-                <a class="text-decoration-none p-2" href="#contact">
-                    <button type="button" class="btn btn-primary rounded-circle border btn-lg">Contact</button>
-                </a>
-            </div>
-        </div>
+  <!--
+  <p class="lead text-white mb-0"></p>
+  <p class="lead text-white">
+
+    <a href="https://bootstrapious.com/snippets" class="text-white">
+        <u>Bootstrapious</u>
+    </a>
+
+  </p>
+  -->
+
+  <!-- Begin content -->
+  <div class="row text-white">
+    <div class="col-lg-6">
+      <h2 class="display-4 text-white" id="home">A little bit about me:</h2>
+      <p class="lead">Born in Brazil. Ready for the world.
+        I'm a full-time father of a couple of the cutest cats and husband of the most beautiful girl.
+        I love learning more and more about almost everything and solving problems as if my life depended on it.
+        I believe in liberty more than anything and, therefore,
+        that NOBODY should NEVER have the power to force how someone should live out their lives.</p>
+      <div class="bg-dark p-2 rounded my-5 shadow-sm">
+        <img class="img-fluid mx-auto" src="static/img/nos.jpg" alt="Us" width="960" height="540">
+        <p class="lead font-italic mb-0 text-muted"></p>
+      </div>
     </div>
-{% include 'resume.html' %}
-{% include 'projects.html' %}
-{% include 'contact.html' %}
+
+    <!-- Bringing resume content -->
+    {% include 'resume.html' %}
+  </div>
+
+  <!-- Bringing projects content -->
+  {% include 'projects.html' %}
+
+  <!-- End content -->
+</div>
 {% endblock %}
