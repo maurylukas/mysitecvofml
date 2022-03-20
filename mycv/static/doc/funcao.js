@@ -37,4 +37,9 @@ $(document).ready(function() {
     if ($(window).width() <= 768) {
         $('.collapse').collapse();
     }
+
+    // Animating to top
+  $('.back2top').on('click', function() {
+    $('html, body').animate({scrollTop : 0},800);
+  });
 });
