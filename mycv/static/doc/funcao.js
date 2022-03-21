@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     // Sidebar fix behavior
     function scrolling () {
-        if ($(window).scrollTop() >= 10) {
+        if ($(window).scrollTop() >= 5) {
             $('.wrapper').removeClass('active');
         } else {
             $('.wrapper').addClass('active');
