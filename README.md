@@ -1,7 +1,7 @@
 # mysitecvofml
  A site with my CV
 
-<br>
+https://maurylukas.herokuapp.com
 
  Here you can find information about:
 - me,
