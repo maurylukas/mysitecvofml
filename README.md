@@ -1,4 +1,4 @@
-# mysitecvofml
+# My CV (site version)
  A site with my CV
 
 https://maurylukas.herokuapp.com
