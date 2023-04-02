@@ -1,7 +1,7 @@
 # My CV (site version)
  A site with my CV
 
-https://maurylukas.herokuapp.com
+https://maurylukas.onrender.com
 
  Here you can find information about:
 - me,
